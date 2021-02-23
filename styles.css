@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
