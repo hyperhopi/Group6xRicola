@@ -1,5 +1,6 @@
 const textElement = document.getElementById('question');
 const optionButtonsElement = document.getElementById('option-buttons');
+let naturePoint = 0;
 
 let natureState = {}
     // let peopleState = {}
@@ -7,6 +8,10 @@ let natureState = {}
 function startGame() {
     state = {}
     showTextNode(1)
+}
+
+function incrementNaturePoint() {
+    naturePoint++;
 }
 
 function showTextNode(textNodeIndex) {
@@ -37,12 +42,21 @@ function showOption(option) {
 
 function selectOption(option) {
     let nextTextNodeId = option.nextText
+
+    if (option.typeOfPoint==="nature"){
+        incrementNaturePoint();
+        console.log(naturePoint);
+    }
+
     if (nextTextNodeId <= 0) {
         return startGame() //change to showMap later
     }
+
     state = Object.assign(state, option.setNatureState)
     showTextNode(nextTextNodeId)
 }
+
+
 
 const textNodes = [{
         id: 1,
@@ -50,19 +64,23 @@ const textNodes = [{
         options: [{
                 text: "Nature option",
                 setNatureState: { naturePoint: true },
+                typeOfPoint: "nature",
                 nextText: 2
             },
             {
                 text: "People option",
                 // setPeopleState: {}
+                typeOfPoint: "",
                 nextText: 2
             },
             {
                 text: "Business option",
+                typeOfPoint: "",
                 nextText: 2
             },
             {
                 text: "X option",
+                typeOfPoint: "",
                 nextText: 2
             }
         ]
@@ -71,22 +89,27 @@ const textNodes = [{
         id: 2,
         text: "Welcome to the Ricola Factory VERSION 2!",
         options: [{
-                text: "Tade your nature point for a business point",
-                requiredState: (currentState) => currentState.naturePoint,
+                text: "Nature again",
+                typeOfPoint: "nature",
+                // requiredState: (currentState) => currentState.naturePoint,
                 // setState: { naturePoint: false, sword: true },
                 nextText: 3
             },
             {
                 text: "People option",
                 // setPeopleState: {}
+                typeOfPoint: "",
                 nextText: 3
+                
             },
             {
                 text: "Business option",
+                typeOfPoint: "",
                 nextText: 3
             },
             {
                 text: "X option",
+                typeOfPoint: "",
                 nextText: 3
             }
         ]
@@ -94,3 +117,4 @@ const textNodes = [{
 ]
 
 startGame();
+console.log(naturePoint);
