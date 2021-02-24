@@ -27,12 +27,21 @@ function showTextNode(textNodeIndex) {
     })
 }
 
+function showMap() {
+
+}
+
 function showOption(option) {
-    return true
+    return option.requiredState == null || option.requiredState(state)
 }
 
 function selectOption(option) {
-
+    let nextTextNodeId = option.nextText
+    if (nextTextNodeId <= 0) {
+        return startGame() //change to showMap later
+    }
+    state = Object.assign(state, option.setNatureState)
+    showTextNode(nextTextNodeId)
 }
 
 const textNodes = [{
@@ -62,8 +71,9 @@ const textNodes = [{
         id: 2,
         text: "Welcome to the Ricola Factory VERSION 2!",
         options: [{
-                text: "Nature option",
-                setNatureState: { naturePoint: true },
+                text: "Tade your nature point for a business point",
+                requiredState: (currentState) => currentState.naturePoint,
+                // setState: { naturePoint: false, sword: true },
                 nextText: 3
             },
             {
