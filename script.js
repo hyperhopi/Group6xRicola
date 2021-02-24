@@ -1,6 +1,9 @@
 const textElement = document.getElementById('question');
 const optionButtonsElement = document.getElementById('option-buttons');
 let naturePoint = 0;
+let businessPoint = 0;
+let peoplePoint = 0;
+
 
 let natureState = {}
     // let peopleState = {}
@@ -12,6 +15,14 @@ function startGame() {
 
 function incrementNaturePoint() {
     naturePoint++;
+}
+
+function incrementBusinessPoint() {
+    businessPoint++;
+}
+
+function incrementPeoplePoint() {
+    peoplePoint++;
 }
 
 function showTextNode(textNodeIndex) {
@@ -45,8 +56,16 @@ function selectOption(option) {
 
     if (option.typeOfPoint==="nature"){
         incrementNaturePoint();
-        console.log(naturePoint);
-    }
+        console.log("You have "+naturePoint+" nature points");
+
+    } else if (option.typeOfPoint==="business") {
+        incrementBusinessPoint();
+        console.log("You have "+businessPoint+" business points");
+
+    } else if (option.typeOfPoint==="people") {
+        incrementPeoplePoint();
+        console.log("You have "+peoplePoint+" people points");
+    } 
 
     if (nextTextNodeId <= 0) {
         return startGame() //change to showMap later
@@ -70,12 +89,12 @@ const textNodes = [{
             {
                 text: "People option",
                 // setPeopleState: {}
-                typeOfPoint: "",
+                typeOfPoint: "people",
                 nextText: 2
             },
             {
                 text: "Business option",
-                typeOfPoint: "",
+                typeOfPoint: "business",
                 nextText: 2
             },
             {
@@ -98,13 +117,13 @@ const textNodes = [{
             {
                 text: "People option",
                 // setPeopleState: {}
-                typeOfPoint: "",
+                typeOfPoint: "people",
                 nextText: 3
                 
             },
             {
                 text: "Business option",
-                typeOfPoint: "",
+                typeOfPoint: "business",
                 nextText: 3
             },
             {
