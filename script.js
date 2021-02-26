@@ -11,17 +11,6 @@ function startGame() {
     showTextNode(1);
 }
 
-function incrementNaturePoint() {
-    naturePoint++;
-}
-
-function incrementBusinessPoint() {
-    businessPoint++;
-}
-
-function incrementPeoplePoint() {
-    peoplePoint++;
-}
 
 //Show or hide the popup message
 
@@ -64,21 +53,23 @@ function selectOption(option) {
     let nextTextNodeId = option.nextText;
 
     if (option.typeOfPoint==="nature"){
-        incrementNaturePoint();
+        naturePoint = naturePoint + option.numberOfPoints;
         console.log("You have "+naturePoint+" nature points");
+    }
 
-    } else if (option.typeOfPoint==="business") {
-        incrementBusinessPoint();
+    else if (option.typeOfPoint==="business") {
+        businessPoint = businessPoint + option.numberOfPoints;
         console.log("You have "+businessPoint+" business points");
 
     } else if (option.typeOfPoint==="people") {
-        incrementPeoplePoint();
+        peoplePoint = peoplePoint + option.numberOfPoints;
+        console.log("this is my life i whana live" + option.numberOfPoints)
         console.log("You have "+peoplePoint+" people points");
     } 
 
     if (nextTextNodeId <= 0) {
        // return startGame() //change to showMap later
-       showPopUp();
+      return showPopUp();
     }
 
     state = Object.assign(state, option.setNatureState)
@@ -93,22 +84,25 @@ const textNodes = [{
         options: [{
                 text: "Nature option",
                 typeOfPoint: "nature",
+                numberOfPoints: 1,
                 nextText: 2
             },
             {
                 text: "People option",
                 typeOfPoint: "people",
-                numberofPoints: 3,
+                numberOfPoints: 3,
                 nextText: 2
             },
             {
                 text: "Business option",
                 typeOfPoint: "business",
+                numberOfPoints: 1,
                 nextText: 2
             },
             {
                 text: "X option",
                 typeOfPoint: "",
+                numberOfPoints: 1,
                 nextText: 2
             }
         ]
@@ -119,24 +113,27 @@ const textNodes = [{
         options: [{
                 text: "Nature again",
                 typeOfPoint: "nature",
-                typeOfPoint: "nature",
+                numberOfPoints: 3,
                 nextText: -1 //just to test the popup
             },
             {
                 text: "People option",
                 // setPeopleState: {}
                 typeOfPoint: "people",
+                numberOfPoints: 2,
                 nextText: 3
                 
             },
             {
                 text: "Business option",
                 typeOfPoint: "business",
+                numberOfPoints: 1,
                 nextText: 3
             },
             {
                 text: "X option",
                 typeOfPoint: "",
+                numberOfPoints: 1,
                 nextText: 3
             }
         ]
@@ -144,4 +141,3 @@ const textNodes = [{
 ]
 
 startGame();
-console.log(naturePoint);
