@@ -140,4 +140,15 @@ const textNodes = [{
     },
 ]
 
+/* here is some map JS */
+
+const hexses = document.querySelectorAll(".hexagons")
+
+hexses.forEach((e) => {
+    e.addEventListener("click", function (){
+        let questionPage = document.querySelector(".hidden");
+        questionPage.classList.remove('hidden');
+    });
+})
+
 startGame();
