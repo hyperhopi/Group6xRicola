@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,21 +16,21 @@ body {
 }
 
 .container {
-    width: 800px;
-    max-width: 80%;
-    padding: 10px;
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
+  width: 800px;
+  max-width: 80%;
+  padding: 10px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    padding: 10px;
-    gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 10px;
+  gap: 5px;
 }
 
 .button {
@@ -50,4 +50,59 @@ body {
     background-color: #13795b;
     border: none;
     cursor: inherit;
+}
+
+/*POPUP!*/
+
+/* Popup container - can be anything you want */
+.popup {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  height: 20vh;
+  background-color: rgb(236, 211, 65);
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
