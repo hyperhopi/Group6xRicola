@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: grey;
+    cursor: url(./bee.png), auto;
 }
 
 .container {
@@ -35,4 +36,18 @@ body {
 .button {
     padding: 5px;
     border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: #13795b;
+}
+
+.hexagons {
+    background-color: #13795b;
+    border: none;
+    cursor: inherit;
 }
