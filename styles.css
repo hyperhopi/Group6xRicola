@@ -160,6 +160,7 @@ body {
     text-decoration: none;
     text-align: center;
     transition: transform 0.24s ease-out;
+    color: transparent;
 }
 
 @media screen and (min-width: 1440px) {
@@ -489,4 +490,37 @@ body {
 
 .hex-grid__content:hover {
     background-color: yellow;
+}
+
+.hex-grid__list {
+    transform: rotate( 270deg);
+}
+
+#hex4,
+#hex5,
+#hex6,
+#hex7,
+#hex8,
+#hex11,
+#hex12,
+#hex13,
+#hex16,
+#hex17,
+#hex18,
+#hex19,
+#hex21,
+#hex22,
+#hex26,
+#hex29,
+#hex30,
+#hex31,
+#hex33,
+#hex34,
+#hex35,
+#hex36,
+
+/* #hex39, */
+
+#hex40 {
+    display: none;
 }
