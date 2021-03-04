@@ -1,6 +1,6 @@
 const textElement = document.getElementById('question');
 const optionButtonsElement = document.getElementById('option-buttons');
-const closeButton = document.getElementById('closeButton').addEventListener("click",showPopUp);
+const closeButton = document.getElementById('closeButton').addEventListener("click", showPopUp);
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
@@ -17,11 +17,11 @@ function startGame() {
 function showPopUp() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-  }
+}
 
 
 
-  //Show or hide text and buttons
+//Show or hide text and buttons
 
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
@@ -32,8 +32,8 @@ function showTextNode(textNodeIndex) {
 
     textNode.options.forEach(option => {
         if (showOption(option)) {
-            const button = document.createElement("button")
-            button.innerText = option.text;
+            const button = document.createElement("div")
+            button.innerHTML = option.text;
             button.classList.add("btn");
             button.addEventListener('click', () => selectOption(option));
             optionButtonsElement.appendChild(button);
@@ -52,24 +52,22 @@ function showOption(option) {
 function selectOption(option) {
     let nextTextNodeId = option.nextText;
 
-    if (option.typeOfPoint==="nature"){
+    if (option.typeOfPoint === "nature") {
         naturePoint = naturePoint + option.numberOfPoints;
-        console.log("You have "+naturePoint+" nature points");
-    }
-
-    else if (option.typeOfPoint==="business") {
+        console.log("You have " + naturePoint + " nature points");
+    } else if (option.typeOfPoint === "business") {
         businessPoint = businessPoint + option.numberOfPoints;
-        console.log("You have "+businessPoint+" business points");
+        console.log("You have " + businessPoint + " business points");
 
-    } else if (option.typeOfPoint==="people") {
+    } else if (option.typeOfPoint === "people") {
         peoplePoint = peoplePoint + option.numberOfPoints;
         console.log("this is my life i whana live" + option.numberOfPoints)
-        console.log("You have "+peoplePoint+" people points");
-    } 
+        console.log("You have " + peoplePoint + " people points");
+    }
 
     if (nextTextNodeId <= 0) {
-       // return startGame() //change to showMap later
-      return showPopUp();
+        // return startGame() //change to showMap later
+        return showPopUp();
     }
 
     state = Object.assign(state, option.setNatureState)
@@ -80,29 +78,17 @@ function selectOption(option) {
 //Where all the content in the game is stored
 const textNodes = [{
         id: 1,
-        text: "Welcome to the Ricola Factory!",
+        text: "Ricola’s trusted honey supplier has taken a even more sustainable path, which has significantly increased their prices. What would you do ?",
         options: [{
-                text: "Nature option",
+                text: "Option A: This option is better for nature, so you may get Nature points.",
                 typeOfPoint: "nature",
                 numberOfPoints: 1,
                 nextText: 2
             },
             {
-                text: "People option",
+                text: "Option B: This options favors small businesses, so you may get People points.",
                 typeOfPoint: "people",
                 numberOfPoints: 3,
-                nextText: 2
-            },
-            {
-                text: "Business option",
-                typeOfPoint: "business",
-                numberOfPoints: 1,
-                nextText: 2
-            },
-            {
-                text: "X option",
-                typeOfPoint: "",
-                numberOfPoints: 1,
                 nextText: 2
             }
         ]
@@ -122,19 +108,7 @@ const textNodes = [{
                 typeOfPoint: "people",
                 numberOfPoints: 2,
                 nextText: 3
-                
-            },
-            {
-                text: "Business option",
-                typeOfPoint: "business",
-                numberOfPoints: 1,
-                nextText: 3
-            },
-            {
-                text: "X option",
-                typeOfPoint: "",
-                numberOfPoints: 1,
-                nextText: 3
+
             }
         ]
     },
@@ -145,7 +119,7 @@ const textNodes = [{
 const hexses = document.querySelectorAll(".hexagons")
 
 hexses.forEach((e) => {
-    e.addEventListener("click", function (){
+    e.addEventListener("click", function() {
         let questionPage = document.querySelector(".hidden");
         questionPage.classList.remove('hidden');
     });

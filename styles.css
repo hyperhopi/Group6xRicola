@@ -5,37 +5,66 @@
     padding: 0;
 }
 
-body {
+body {}
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
     width: 100vw;
     height: 100vh;
-    background-color: grey;
-    cursor: url(./bee.png), auto;
+    /* cursor: url(./bee.png), auto; */
 }
 
-.container {
-    width: 800px;
-    max-width: 80%;
+.header {
+    background-color: #13795b;
+    height: 50px;
+}
+
+.question-page {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
-    background-color: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 5px;
 }
 
+#question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    height: 280px;
+    width: 240px;
+    background-image: url(questionBox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #13795b;
+}
+
 .button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    margin-top: -20px;
+    display: flex;
     padding: 10px;
     gap: 5px;
 }
 
-.button {
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     border-radius: 5px;
+    height: 180px;
+    width: 160px;
+    background-image: url(answerBox.svg);
+    background-repeat: no-repeat;
+    color: #13795b;
 }
 
 .hidden {
@@ -168,81 +197,81 @@ body {
         --amount: 5;
         --counter: 1;
     }
-    .hex-grid__item:nth-of-type(5n + 1) {
+    .hex-grid__item:nth-of-type(5n+1) {
         grid-column: 1/span 3;
     }
-    .hex-grid__item:nth-of-type(5n + 2) {
+    .hex-grid__item:nth-of-type(5n+2) {
         grid-column: 3/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(5n + 3) {
+    .hex-grid__item:nth-of-type(5n+3) {
         grid-column: 5/span 3;
     }
-    .hex-grid__item:nth-of-type(5n + 4) {
+    .hex-grid__item:nth-of-type(5n+4) {
         grid-column: 7/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(5n + 5) {
+    .hex-grid__item:nth-of-type(5n+5) {
         grid-column: 9/span 3;
     }
-    .hex-grid__item:nth-of-type(n + 6) {
+    .hex-grid__item:nth-of-type(n+6) {
         --counter: 2;
     }
-    .hex-grid__item:nth-of-type(n + 11) {
+    .hex-grid__item:nth-of-type(n+11) {
         --counter: 3;
     }
-    .hex-grid__item:nth-of-type(n + 16) {
+    .hex-grid__item:nth-of-type(n+16) {
         --counter: 4;
     }
-    .hex-grid__item:nth-of-type(n + 21) {
+    .hex-grid__item:nth-of-type(n+21) {
         --counter: 5;
     }
-    .hex-grid__item:nth-of-type(n + 26) {
+    .hex-grid__item:nth-of-type(n+26) {
         --counter: 6;
     }
-    .hex-grid__item:nth-of-type(n + 31) {
+    .hex-grid__item:nth-of-type(n+31) {
         --counter: 7;
     }
-    .hex-grid__item:nth-of-type(n + 36) {
+    .hex-grid__item:nth-of-type(n+36) {
         --counter: 8;
     }
-    .hex-grid__item:nth-of-type(n + 41) {
+    .hex-grid__item:nth-of-type(n+41) {
         --counter: 9;
     }
-    .hex-grid__item:nth-of-type(n + 46) {
+    .hex-grid__item:nth-of-type(n+46) {
         --counter: 10;
     }
-    .hex-grid__item:nth-of-type(n + 51) {
+    .hex-grid__item:nth-of-type(n+51) {
         --counter: 11;
     }
-    .hex-grid__item:nth-of-type(n + 56) {
+    .hex-grid__item:nth-of-type(n+56) {
         --counter: 12;
     }
-    .hex-grid__item:nth-of-type(n + 61) {
+    .hex-grid__item:nth-of-type(n+61) {
         --counter: 13;
     }
-    .hex-grid__item:nth-of-type(n + 66) {
+    .hex-grid__item:nth-of-type(n+66) {
         --counter: 14;
     }
-    .hex-grid__item:nth-of-type(n + 71) {
+    .hex-grid__item:nth-of-type(n+71) {
         --counter: 15;
     }
-    .hex-grid__item:nth-of-type(n + 76) {
+    .hex-grid__item:nth-of-type(n+76) {
         --counter: 16;
     }
-    .hex-grid__item:nth-of-type(n + 81) {
+    .hex-grid__item:nth-of-type(n+81) {
         --counter: 17;
     }
-    .hex-grid__item:nth-of-type(n + 86) {
+    .hex-grid__item:nth-of-type(n+86) {
         --counter: 18;
     }
-    .hex-grid__item:nth-of-type(n + 91) {
+    .hex-grid__item:nth-of-type(n+91) {
         --counter: 19;
     }
-    .hex-grid__item:nth-of-type(n + 96) {
+    .hex-grid__item:nth-of-type(n+96) {
         --counter: 20;
     }
-    .hex-grid__item:nth-of-type(n + 101) {
+    .hex-grid__item:nth-of-type(n+101) {
         --counter: 21;
     }
 }
@@ -252,78 +281,78 @@ body {
         --amount: 4;
         --counter: 1;
     }
-    .hex-grid__item:nth-of-type(4n + 1) {
+    .hex-grid__item:nth-of-type(4n+1) {
         grid-column: 1/span 3;
     }
-    .hex-grid__item:nth-of-type(4n + 2) {
+    .hex-grid__item:nth-of-type(4n+2) {
         grid-column: 3/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(4n + 3) {
+    .hex-grid__item:nth-of-type(4n+3) {
         grid-column: 5/span 3;
     }
-    .hex-grid__item:nth-of-type(4n + 4) {
+    .hex-grid__item:nth-of-type(4n+4) {
         grid-column: 7/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(n + 5) {
+    .hex-grid__item:nth-of-type(n+5) {
         --counter: 2;
     }
-    .hex-grid__item:nth-of-type(n + 9) {
+    .hex-grid__item:nth-of-type(n+9) {
         --counter: 3;
     }
-    .hex-grid__item:nth-of-type(n + 13) {
+    .hex-grid__item:nth-of-type(n+13) {
         --counter: 4;
     }
-    .hex-grid__item:nth-of-type(n + 17) {
+    .hex-grid__item:nth-of-type(n+17) {
         --counter: 5;
     }
-    .hex-grid__item:nth-of-type(n + 21) {
+    .hex-grid__item:nth-of-type(n+21) {
         --counter: 6;
     }
-    .hex-grid__item:nth-of-type(n + 25) {
+    .hex-grid__item:nth-of-type(n+25) {
         --counter: 7;
     }
-    .hex-grid__item:nth-of-type(n + 29) {
+    .hex-grid__item:nth-of-type(n+29) {
         --counter: 8;
     }
-    .hex-grid__item:nth-of-type(n + 33) {
+    .hex-grid__item:nth-of-type(n+33) {
         --counter: 9;
     }
-    .hex-grid__item:nth-of-type(n + 37) {
+    .hex-grid__item:nth-of-type(n+37) {
         --counter: 10;
     }
-    .hex-grid__item:nth-of-type(n + 41) {
+    .hex-grid__item:nth-of-type(n+41) {
         --counter: 11;
     }
-    .hex-grid__item:nth-of-type(n + 45) {
+    .hex-grid__item:nth-of-type(n+45) {
         --counter: 12;
     }
-    .hex-grid__item:nth-of-type(n + 49) {
+    .hex-grid__item:nth-of-type(n+49) {
         --counter: 13;
     }
-    .hex-grid__item:nth-of-type(n + 53) {
+    .hex-grid__item:nth-of-type(n+53) {
         --counter: 14;
     }
-    .hex-grid__item:nth-of-type(n + 57) {
+    .hex-grid__item:nth-of-type(n+57) {
         --counter: 15;
     }
-    .hex-grid__item:nth-of-type(n + 61) {
+    .hex-grid__item:nth-of-type(n+61) {
         --counter: 16;
     }
-    .hex-grid__item:nth-of-type(n + 65) {
+    .hex-grid__item:nth-of-type(n+65) {
         --counter: 17;
     }
-    .hex-grid__item:nth-of-type(n + 69) {
+    .hex-grid__item:nth-of-type(n+69) {
         --counter: 18;
     }
-    .hex-grid__item:nth-of-type(n + 73) {
+    .hex-grid__item:nth-of-type(n+73) {
         --counter: 19;
     }
-    .hex-grid__item:nth-of-type(n + 77) {
+    .hex-grid__item:nth-of-type(n+77) {
         --counter: 20;
     }
-    .hex-grid__item:nth-of-type(n + 81) {
+    .hex-grid__item:nth-of-type(n+81) {
         --counter: 21;
     }
 }
@@ -334,74 +363,74 @@ body {
         --counter: 1;
         grid-gap: 1.5rem 3rem;
     }
-    .hex-grid__item:nth-of-type(3n + 1) {
+    .hex-grid__item:nth-of-type(3n+1) {
         grid-column: 1/span 3;
     }
-    .hex-grid__item:nth-of-type(3n + 2) {
+    .hex-grid__item:nth-of-type(3n+2) {
         grid-column: 3/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(3n + 3) {
+    .hex-grid__item:nth-of-type(3n+3) {
         grid-column: 5/span 3;
     }
-    .hex-grid__item:nth-of-type(n + 4) {
+    .hex-grid__item:nth-of-type(n+4) {
         --counter: 2;
     }
-    .hex-grid__item:nth-of-type(n + 7) {
+    .hex-grid__item:nth-of-type(n+7) {
         --counter: 3;
     }
-    .hex-grid__item:nth-of-type(n + 10) {
+    .hex-grid__item:nth-of-type(n+10) {
         --counter: 4;
     }
-    .hex-grid__item:nth-of-type(n + 13) {
+    .hex-grid__item:nth-of-type(n+13) {
         --counter: 5;
     }
-    .hex-grid__item:nth-of-type(n + 16) {
+    .hex-grid__item:nth-of-type(n+16) {
         --counter: 6;
     }
-    .hex-grid__item:nth-of-type(n + 19) {
+    .hex-grid__item:nth-of-type(n+19) {
         --counter: 7;
     }
-    .hex-grid__item:nth-of-type(n + 22) {
+    .hex-grid__item:nth-of-type(n+22) {
         --counter: 8;
     }
-    .hex-grid__item:nth-of-type(n + 25) {
+    .hex-grid__item:nth-of-type(n+25) {
         --counter: 9;
     }
-    .hex-grid__item:nth-of-type(n + 28) {
+    .hex-grid__item:nth-of-type(n+28) {
         --counter: 10;
     }
-    .hex-grid__item:nth-of-type(n + 31) {
+    .hex-grid__item:nth-of-type(n+31) {
         --counter: 11;
     }
-    .hex-grid__item:nth-of-type(n + 34) {
+    .hex-grid__item:nth-of-type(n+34) {
         --counter: 12;
     }
-    .hex-grid__item:nth-of-type(n + 37) {
+    .hex-grid__item:nth-of-type(n+37) {
         --counter: 13;
     }
-    .hex-grid__item:nth-of-type(n + 40) {
+    .hex-grid__item:nth-of-type(n+40) {
         --counter: 14;
     }
-    .hex-grid__item:nth-of-type(n + 43) {
+    .hex-grid__item:nth-of-type(n+43) {
         --counter: 15;
     }
-    .hex-grid__item:nth-of-type(n + 46) {
+    .hex-grid__item:nth-of-type(n+46) {
         --counter: 16;
     }
-    .hex-grid__item:nth-of-type(n + 49) {
+    .hex-grid__item:nth-of-type(n+49) {
         --counter: 17;
     }
-    .hex-grid__item:nth-of-type(n + 52) {
+    .hex-grid__item:nth-of-type(n+52) {
         --counter: 18;
     }
-    .hex-grid__item:nth-of-type(n + 55) {
+    .hex-grid__item:nth-of-type(n+55) {
         --counter: 19;
     }
-    .hex-grid__item:nth-of-type(n + 58) {
+    .hex-grid__item:nth-of-type(n+58) {
         --counter: 20;
     }
-    .hex-grid__item:nth-of-type(n + 61) {
+    .hex-grid__item:nth-of-type(n+61) {
         --counter: 21;
     }
 }
@@ -412,71 +441,71 @@ body {
         --counter: 1;
         grid-gap: 1.5rem 3rem;
     }
-    .hex-grid__item:nth-of-type(2n + 1) {
+    .hex-grid__item:nth-of-type(2n+1) {
         grid-column: 1/span 3;
     }
-    .hex-grid__item:nth-of-type(2n + 2) {
+    .hex-grid__item:nth-of-type(2n+2) {
         grid-column: 3/span 3;
         grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
     }
-    .hex-grid__item:nth-of-type(n + 3) {
+    .hex-grid__item:nth-of-type(n+3) {
         --counter: 2;
     }
-    .hex-grid__item:nth-of-type(n + 5) {
+    .hex-grid__item:nth-of-type(n+5) {
         --counter: 3;
     }
-    .hex-grid__item:nth-of-type(n + 7) {
+    .hex-grid__item:nth-of-type(n+7) {
         --counter: 4;
     }
-    .hex-grid__item:nth-of-type(n + 9) {
+    .hex-grid__item:nth-of-type(n+9) {
         --counter: 5;
     }
-    .hex-grid__item:nth-of-type(n + 11) {
+    .hex-grid__item:nth-of-type(n+11) {
         --counter: 6;
     }
-    .hex-grid__item:nth-of-type(n + 13) {
+    .hex-grid__item:nth-of-type(n+13) {
         --counter: 7;
     }
-    .hex-grid__item:nth-of-type(n + 15) {
+    .hex-grid__item:nth-of-type(n+15) {
         --counter: 8;
     }
-    .hex-grid__item:nth-of-type(n + 17) {
+    .hex-grid__item:nth-of-type(n+17) {
         --counter: 9;
     }
-    .hex-grid__item:nth-of-type(n + 19) {
+    .hex-grid__item:nth-of-type(n+19) {
         --counter: 10;
     }
-    .hex-grid__item:nth-of-type(n + 21) {
+    .hex-grid__item:nth-of-type(n+21) {
         --counter: 11;
     }
-    .hex-grid__item:nth-of-type(n + 23) {
+    .hex-grid__item:nth-of-type(n+23) {
         --counter: 12;
     }
-    .hex-grid__item:nth-of-type(n + 25) {
+    .hex-grid__item:nth-of-type(n+25) {
         --counter: 13;
     }
-    .hex-grid__item:nth-of-type(n + 27) {
+    .hex-grid__item:nth-of-type(n+27) {
         --counter: 14;
     }
-    .hex-grid__item:nth-of-type(n + 29) {
+    .hex-grid__item:nth-of-type(n+29) {
         --counter: 15;
     }
-    .hex-grid__item:nth-of-type(n + 31) {
+    .hex-grid__item:nth-of-type(n+31) {
         --counter: 16;
     }
-    .hex-grid__item:nth-of-type(n + 33) {
+    .hex-grid__item:nth-of-type(n+33) {
         --counter: 17;
     }
-    .hex-grid__item:nth-of-type(n + 35) {
+    .hex-grid__item:nth-of-type(n+35) {
         --counter: 18;
     }
-    .hex-grid__item:nth-of-type(n + 37) {
+    .hex-grid__item:nth-of-type(n+37) {
         --counter: 19;
     }
-    .hex-grid__item:nth-of-type(n + 39) {
+    .hex-grid__item:nth-of-type(n+39) {
         --counter: 20;
     }
-    .hex-grid__item:nth-of-type(n + 41) {
+    .hex-grid__item:nth-of-type(n+41) {
         --counter: 21;
     }
 }
@@ -524,3 +553,5 @@ body {
 #hex40 {
     display: none;
 }
+
+#ue
