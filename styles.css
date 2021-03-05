@@ -5,13 +5,14 @@
     padding: 0;
 }
 
-body {}
+
+/* body {} */
 
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
     width: 100vw;
     height: 100vh;
     /* cursor: url(./bee.png), auto; */
@@ -189,7 +190,8 @@ body {
     text-decoration: none;
     text-align: center;
     transition: transform 0.24s ease-out;
-    color: transparent;
+    writing-mode: vertical-rl;
+    /* color: transparent; */
 }
 
 @media screen and (min-width: 1440px) {
@@ -547,11 +549,6 @@ body {
 #hex34,
 #hex35,
 #hex36,
-
-/* #hex39, */
-
 #hex40 {
     display: none;
 }
-
-#ue
