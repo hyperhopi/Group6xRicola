@@ -5,13 +5,11 @@
     padding: 0;
 }
 
-body {}
-
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white; */
+    background-color: white;
     width: 100vw;
     height: 100vh;
     /* cursor: url(./bee.png), auto; */
@@ -23,15 +21,14 @@ body {}
 }
 
 .question-page {
-    display: none;
-    /* width: 100vw;
+    width: 100vw;
     height: 100vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px; */
+    border-radius: 5px;
 }
 
 #question {
@@ -82,6 +79,13 @@ body {
     background-color: #13795b;
     border: none;
     cursor: inherit;
+}
+
+.map-wrapper {
+    background-image: url(Grindelwald_IMGP9597_99_RGB\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 

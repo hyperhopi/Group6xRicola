@@ -4,7 +4,8 @@ const closeButton = document.getElementById('closeButton').addEventListener("cli
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
-
+const main = document.querySelector('#main');
+const qna = document.querySelector('#qna');
 
 function startGame() {
     state = {};
@@ -21,12 +22,8 @@ function begin() {
         qna.style.animation = "fadeIn 1s";
         setTimeout(() => {
                 main.style.display = "none";
-                qna.style.display = "block";
             }, 450)
-            //qnaList 괄호속에 0 넣는대신 이렇게 먼저 만들어서 넣어준다. qIdx의 정의는 0으로 정해준다.
-            //이유: goNext함수를 두번째 돌릴때 여기다가 1 증가할수있게 만들기 위한 준비!
-            // let qIdx = 0;
-            // startGame(qIdx);
+            qna.classList.remove("hidden");
         startGame();
     }, 450)
 }
@@ -36,11 +33,6 @@ function begin() {
 function showPopUp() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-}
-
-function popp() {
-    var poop = document.getElementById("myPopp");
-    popup.classList.toggle("shoe");
 }
 
 //Show or hide text and buttons
@@ -107,5 +99,3 @@ hexses.forEach((e) => {
         questionPage.classList.remove('hidden');
     });
 })
-
-startGame();

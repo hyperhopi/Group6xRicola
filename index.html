@@ -14,7 +14,7 @@
 
     <div class="wrapper">
 
-        <div class="question-page" id="qna">
+        <div class="question-page hidden" id="qna">
             <div id="question">
                 question goes here
             </div>
@@ -32,9 +32,10 @@
         <!-- <img src="./smallstep.svg" alt=""> -->
 
         <!-- below is the map section-->
+        <div class="map-wrapper">
         <div class="map-grid" id="main">
             <ul class="hex-grid__list">
-                <li class="hex-grid__item" id="hex1" onclick="js:begin()">
+                <li class="hex-grid__item" id="hex1">
                     <div class="hex-grid__content">
                         Footstep 1
                     </div>
@@ -238,6 +239,7 @@
             </ul>
 
         </div>
+    </div>
 
         <div class="popup">
             <span class="popuptext" id="myPopup">Congratulations! You made it to the next round<br>
