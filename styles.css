@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #13795b;
     width: 100vw;
     height: 100vh;
     /* cursor: url(./bee.png), auto; */
@@ -81,12 +81,12 @@ body {
     cursor: inherit;
 }
 
-.map-wrapper {
+/*.map-wrapper {
     background-image: url(Grindelwald_IMGP9597_99_RGB\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     
-}
+}/*
 
 
 /*POPUP!*/
