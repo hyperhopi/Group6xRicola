@@ -73,7 +73,7 @@
 }
 
 body {
-    background-color: #13795b;
+    background-color: #0000;
 }
 
 .hexagons {
@@ -550,5 +550,10 @@ body {
 #hex35,
 #hex36,
 #hex40 {
-    display: none;
+    display: none;}
+
+.name-tag {
+    padding: 0;
+    width: 10vw;
+    height: fit-content;
 }
