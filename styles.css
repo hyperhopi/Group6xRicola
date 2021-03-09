@@ -5,13 +5,17 @@
   padding: 0;
 }
 
+.container {
+  display: flex;
+}
+
 .wrapper {
   display: flex;
   /* flex-direction: row; */
   /* justify-content: center; */
   align-items: center;
   background-color: #13795b;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
   background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
   background-repeat: no-repeat;
@@ -88,7 +92,7 @@ body {
 /*Side menu*/
 .side-menu {
   background-color: #e4e4e4;
-  width: 15%;
+  width: 20vw;
 }
 
 /*.map-wrapper {
@@ -192,7 +196,8 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
-  grid-gap: 2.5rem 4rem;
+  grid-gap: 2.5em 4em;
+  font-size: 13.5px;
 }
 
 .hex-grid__item {
