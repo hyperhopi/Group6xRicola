@@ -40,7 +40,7 @@ function continueGame() {
     qna.style.WebkitAnimation = "fadeOut 0.6s";
     qna.style.animation = "fadeOut 0.6s";
     setTimeout(() => {
-        qna.style.display = "none";
+        qna.classList.add("hidden");
         main.style.WebkitAnimation = "fadeIn 1s";
         main.style.animation = "fadeIn 1s";
         main.classList.remove("hidden");
