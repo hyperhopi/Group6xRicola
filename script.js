@@ -15,15 +15,13 @@ function startGame() {
 //beging page
 
 function begin() {
-    main.style.WebkitAnimation = "fadeOut 1s";
-    main.style.animation = "fadeOut 1s";
+    main.style.WebkitAnimation = "fadeOut 0.6s";
+    main.style.animation = "fadeOut 0.6s";
     setTimeout(() => {
+        main.style.display = "none";
         qna.style.WebkitAnimation = "fadeIn 1s";
         qna.style.animation = "fadeIn 1s";
-        setTimeout(() => {
-                main.style.display = "none";
-            }, 450)
-            qna.classList.remove("hidden");
+        qna.classList.remove("hidden");
         startGame();
     }, 450)
 }
