@@ -10,7 +10,6 @@
 }
 
 .wrapper {
-<<<<<<< HEAD
   display: flex;
   /* flex-direction: row; */
   /* justify-content: center; */
@@ -22,19 +21,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* cursor: url(./bee.png), auto; */
-=======
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    align-items: center;
-    background-color: #13795b;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* cursor: url(./bee.png), auto; */
->>>>>>> 03b5c9a3d32e43208bbd41224bdc9e40b1bc3d28
 }
 
 .header {
@@ -107,14 +93,9 @@ body {
 /*Side menu*/
 
 .side-menu {
-<<<<<<< HEAD
   background-color: #e4e4e4;
   width: 20vw;
-=======
-    margin: 0%;
-    background-color: #e4e4e4;
-    width: 15%;
->>>>>>> 03b5c9a3d32e43208bbd41224bdc9e40b1bc3d28
+  margin: 0%;
 }
 
 
@@ -216,7 +197,7 @@ body {
 }
 
 .hex-grid__list {
-<<<<<<< HEAD
+
   --amount: 5;
   height: 50vh;
   /* position: relative; */
@@ -227,17 +208,6 @@ body {
   grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
   grid-gap: 2.5em 4em;
   font-size: 13.5px;
-=======
-    --amount: 5;
-    height: 50vh;
-    /* position: relative; */
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
-    grid-gap: 2.5rem 4rem;
->>>>>>> 03b5c9a3d32e43208bbd41224bdc9e40b1bc3d28
 }
 
 .hex-grid__item {
