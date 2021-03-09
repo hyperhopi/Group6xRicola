@@ -12,6 +12,9 @@
     background-color: #13795b;
     width: 100vw;
     height: 100vh;
+    background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* cursor: url(./bee.png), auto; */
 }
 

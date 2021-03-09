@@ -1,11 +1,12 @@
 const textElement = document.getElementById('question');
 const optionButtonsElement = document.getElementById('option-buttons');
-const closeButton = document.getElementById('closeButton').addEventListener("click", showPopUp);
+const closeButton = document.getElementById('closeButton').addEventListener("click", continueGame);
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
 const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
+const wrapper = document.querySelector('.wrapper');
 
 function startGame() {
     state = {};
@@ -18,7 +19,8 @@ function begin() {
     main.style.WebkitAnimation = "fadeOut 0.6s";
     main.style.animation = "fadeOut 0.6s";
     setTimeout(() => {
-        main.style.display = "none";
+        main.classList.add("hidden");
+        wrapper.style.backgroundImage = "none";
         qna.style.WebkitAnimation = "fadeIn 1s";
         qna.style.animation = "fadeIn 1s";
         qna.classList.remove("hidden");
@@ -28,10 +30,24 @@ function begin() {
 
 //Show or hide the popup message
 
-function showPopUp() {
+function togglePopUp() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+function continueGame() {
+    // add function that returns to map screen
+    qna.style.WebkitAnimation = "fadeOut 0.6s";
+    qna.style.animation = "fadeOut 0.6s";
+    setTimeout(() => {
+        qna.style.display = "none";
+        main.style.WebkitAnimation = "fadeIn 1s";
+        main.style.animation = "fadeIn 1s";
+        main.classList.remove("hidden");
+        wrapper.style.backgroundImage = "url('Grindelwald_IMGP9734_35_Kombi_RGB.jpg')";
+    }, 450)
+    togglePopUp();
+};
 
 //Show or hide text and buttons
 
@@ -79,7 +95,7 @@ function selectOption(option) {
 
     if (nextTextNodeId <= 0) {
         // return startGame() //change to showMap later
-        return showPopUp();
+        return togglePopUp();
     }
 
     state = Object.assign(state, option.setNatureState)
