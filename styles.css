@@ -14,7 +14,7 @@
     /* flex-direction: row; */
     /* justify-content: center; */
     align-items: center;
-    background-color: #13795b;
+    background-color: #005245;
     width: 80vw;
     height: 100vh;
     background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
@@ -24,7 +24,7 @@
 }
 
 .header {
-    background-color: #13795b;
+    background-color: #005245;
     height: 50px;
 }
 
@@ -50,7 +50,7 @@
     background-image: url(questionBox.svg);
     background-repeat: no-repeat;
     background-position: center;
-    color: #13795b;
+    color: #005245;
     font-weight: 650;
     font-size: medium;
 }
@@ -72,7 +72,7 @@
     width: 160px;
     background-image: url(answerBox.svg);
     background-repeat: no-repeat;
-    color: #13795b;
+    color: #005245;
 }
 
 .hidden {
@@ -80,11 +80,11 @@
 }
 
 body {
-    background-color: #13795b;
+    background-color: #005245;
 }
 
 .hexagons {
-    background-color: #13795b;
+    background-color: #005245;
     border: none;
     cursor: inherit;
 }
@@ -236,6 +236,21 @@ body {
     transition: transform 0.24s ease-out;
     writing-mode: vertical-rl;
     /* color: transparent; */
+}
+
+#hex1-1 {
+    background-color: #005245;
+    color: white;
+}
+
+#hex1-1:hover {
+    background-color: rgb(236, 211, 65);
+    color: #111111;
+}
+
+#hex39-1 {
+    color: #005245;
+    font-size: 27px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -599,3 +614,8 @@ body {
 #hex40 {
     display: none;
 }
+
+
+/* #hex1 {
+    background-color: 005245;
+} */
