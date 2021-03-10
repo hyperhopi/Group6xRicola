@@ -18,14 +18,14 @@ function begin() {
     main.style.WebkitAnimation = "fadeOut 0.6s";
     main.style.animation = "fadeOut 0.6s";
     setTimeout(() => {
-        main.classList.add("hidden");
-        wrapper.style.backgroundImage = "none";
-        qna.style.WebkitAnimation = "fadeIn 1s";
-        qna.style.animation = "fadeIn 1s";
-        qna.classList.remove("hidden");
-        startGame();
-    }, 450)
-    activehex.style.backgroundColor = "#FDEAA1";
+            main.classList.add("hidden");
+            wrapper.style.backgroundImage = "none";
+            qna.style.WebkitAnimation = "fadeIn 1s";
+            qna.style.animation = "fadeIn 1s";
+            qna.classList.remove("hidden");
+            startGame();
+        }, 450)
+        // activehex.style.backgroundColor = "#FDEAA1";
 }
 
 //Show or hide the popup message
