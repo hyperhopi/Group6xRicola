@@ -13,7 +13,6 @@ function startGame() {
     showTextNode(1);
 }
 
-//beging page
 
 function begin() {
     main.style.WebkitAnimation = "fadeOut 0.6s";
@@ -26,6 +25,7 @@ function begin() {
         qna.classList.remove("hidden");
         startGame();
     }, 450)
+    activehex.style.backgroundColor = "#FDEAA1";
 }
 
 //Show or hide the popup message
