@@ -1,11 +1,12 @@
 <!-- <!DOCTYPE html> -->
 <html>
-  <head>
+
+<head>
     <title>Ricola Game</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="header">
 
         <div class="ricola-logo">
@@ -43,18 +44,18 @@
                 <div class="map-grid" id="main">
                     <ul class="hex-grid__list">
                         <li class="hex-grid__item" id="hex1" onclick="js:begin()">
-                            <div class="hex-grid__content" id="hex1-1" color="red">
+                            <div class="hex-grid__content" id="hex1a" color="red">
                                 START
                             </div>
                         </li>
                         <!-- <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">Click to Start</button> -->
                         <li class="hex-grid__item" id="hex2" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex2a">
                                 Footstep 1
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex3" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex3a">
                                 Footstep 2
                             </div>
                         </li>
@@ -84,12 +85,12 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex9" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex9a">
                                 Footstep 3
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex10" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex10a">
                                 Footstep 4
                             </div>
                         </li>
@@ -109,12 +110,12 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex14" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex14a">
                                 Footstep 5
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex15" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex15a">
                                 Footstep 6
                             </div>
                         </li>
@@ -139,7 +140,7 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex20" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex20a">
                                 Footstep 7
                             </div>
                         </li>
@@ -154,17 +155,17 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex23" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex23a">
                                 Footstep 10
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex24" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex24a">
                                 Footstep 9
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex25" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex25a">
                                 Footstep 8
                             </div>
                         </li>
@@ -174,12 +175,12 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex27" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex27a">
                                 Footstep 11
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex28" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex28a">
                                 Footstep 12
                             </div>
                         </li>
@@ -199,7 +200,7 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex32" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex32a">
                                 Footstep 13
                             </div>
                         </li>
@@ -224,17 +225,17 @@
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex37" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex37a">
                                 Footstep 14
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex38" onclick="js:begin()">
-                            <div class="hex-grid__content">
+                            <div class="hex-grid__content" id="hex38a">
                                 Footstep 15
                             </div>
                         </li>
                         <li class="hex-grid__item" id="hex39" onclick="js:begin()">
-                            <div class="hex-grid__content" id="hex39-1">
+                            <div class="hex-grid__content" id="hex39a">
                                 ➔
                             </div>
                         </li>
@@ -248,96 +249,97 @@
             </div>
 
             <!--POPUP! Hidden most of the time-->
-        <div class="popup">
-            <span class="popuptext" id="myPopup"
-              ><p class="points-earned">Earned points to register here</p>
-              <div class="points-box">
-                <div class="popup-circle">
-                  <!-- needs to change N,B,P or O(ther?)-->
-                  <span class="letter">N</span>
-                  <span>Nature</span>
-                </div>
-                <p class="points-info">Zero pesticides</p>
-                <!-- needs to change depending on if N, B, P etc -->
-              </div>
-              <button id="closeButton" class="continue-button">Continue</button>
-            </span>
-          </div>
-
-            <script src="data.js"></script>
-            <script src="script.js"></script>
-
+            <div class="popup">
+                <span class="popuptext" id="myPopup">
+                    <p class="points-earned">Earned points to register here</p>
+                    <div class="points-box">
+                        <div class="popup-circle">
+                            <!-- needs to change N,B,P or O(ther?)-->
+                            <span class="letter">N</span>
+                <span>Nature</span>
+            </div>
+            <p class="points-info">Zero pesticides</p>
+            <!-- needs to change depending on if N, B, P etc -->
         </div>
+        <button id="closeButton" class="continue-button">Continue</button>
+        </span>
+    </div>
 
-        <!--Side menu for the map page-->
-        <div class="side-menu">
-            <div class="SM-score-box">
-                
-                <div class="SM-text-score-box">
-                    <span id="SM-text-score">SCORE</span>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+    </div>
+
+    <!--Side menu for the map page-->
+    <div class="side-menu">
+        <div class="SM-score-box">
+
+            <div class="SM-text-score-box">
+                <span id="SM-text-score">SCORE</span>
+            </div>
+
+            <span id="SM-score-percent">67%</span>
+            <span id="SM-score-percent-text">Aligned with the <br>footsteps</span>
+
+            <div class="SM-yellow-boxes">
+                <div class="SM-circle" id="n-circle">
+                    <span class="SM-letter">N</span>
+                    <span class="SM-letter-text">Nature</span>
                 </div>
+                <div class="SM-box" id="n-box">0</div>
 
-                <span id="SM-score-percent">67%</span>
-                <span id="SM-score-percent-text">Aligned with the <br>footsteps</span>
-            
-                <div class="SM-yellow-boxes">
-                    <div class="SM-circle" id="n-circle">
-                        <span class="SM-letter">N</span>
-                        <span class="SM-letter-text">Nature</span>
-                    </div>
-                    <div class="SM-box" id="n-box">0</div>
-
-                    <div class="SM-circle" id="p-circle">
-                        <span class="SM-letter">P</span>
-                        <span class="SM-letter-text">People</span>
-                    </div>
-                    <div class="SM-box" id="p-box">0</div>
-
-                    <div class="SM-circle" id="b-circle">
-                        <span class="SM-letter">B</span>
-                        <span class="SM-letter-text">Business</span>
-                    </div>
-                    <div class="SM-box" id="b-box">0</div>
+                <div class="SM-circle" id="p-circle">
+                    <span class="SM-letter">P</span>
+                    <span class="SM-letter-text">People</span>
                 </div>
+                <div class="SM-box" id="p-box">0</div>
 
-                <span id="SM-number-of-footsteps">10/28</span>
-                <span id="SM-number-of-footsteps-text">Footsteps collected</span>
-                <span id="SM-border">-</span>
-                
-                <div class="SM-footsteps-collected">
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-                <p>&#11044;</p>
-
+                <div class="SM-circle" id="b-circle">
+                    <span class="SM-letter">B</span>
+                    <span class="SM-letter-text">Business</span>
                 </div>
+                <div class="SM-box" id="b-box">0</div>
+            </div>
+
+            <span id="SM-number-of-footsteps">10/28</span>
+            <span id="SM-number-of-footsteps-text">Footsteps collected</span>
+            <span id="SM-border">-</span>
+
+            <div class="SM-footsteps-collected">
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+                <p>&#11044;</p>
+
             </div>
         </div>
-      </div>
     </div>
-  </body>
+    </div>
+    </div>
+</body>
+
 </html>
