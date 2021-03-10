@@ -28,6 +28,29 @@
     height: 50px;
 }
 
+.chapter {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.chapter-name {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 37px;
+    color: #005245;
+    margin-top: 20px;
+}
+
 .question-page {
     width: 100vw;
     height: 100vh;
