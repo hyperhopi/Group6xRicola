@@ -99,14 +99,14 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
   background-color: #005245;
 }
 
-.screen-message {
+#screen-message {
   color: white;
   text-align: center;
   display: flex;

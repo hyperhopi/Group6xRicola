@@ -6,7 +6,7 @@ let businessPoint = 0;
 let peoplePoint = 0;
 const main = document.querySelector('#main');
 const container = document.querySelector(".container");
-const screenMessage = document.querySelector(".screen-message");
+const screenMessage = document.getElementById("screen-message");
 const qna = document.querySelector('#qna');
 const wrapper = document.querySelector('.wrapper');
 const windowWidth = window.screen.width;
@@ -119,7 +119,7 @@ hexses.forEach((e) => {
 })
 
 if (windowWidth<1440) {
-console.log ("hallå större skärm pls") 
+console.log ("heyo bigger screen pls") 
 container.classList.add("hidden");
 screenMessage.classList.remove("hidden");
-}
+} 
