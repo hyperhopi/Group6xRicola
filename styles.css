@@ -6,21 +6,21 @@
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .wrapper {
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    align-items: center;
-    background-color: #005245;
-    width: 80vw;
-    height: 100vh;
-    background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* cursor: url(./bee.png), auto; */
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #ffffff;
+  width: 80vw;
+  height: 100vh;
+  background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* cursor: url(./bee.png), auto; */
 }
 
 .header {
@@ -29,26 +29,26 @@
 }
 
 .chapter {
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: #000000;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .chapter-name {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 37px;
-    color: #005245;
-    margin-top: 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 37px;
+  color: #005245;
+  margin-top: 20px;
 }
 
 .question-page {
@@ -86,16 +86,16 @@
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 22px;
-    border-radius: 5px;
-    height: 180px;
-    width: 160px;
-    background-image: url(answerBox.svg);
-    background-repeat: no-repeat;
-    color: #005245;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  border-radius: 5px;
+  height: 180px;
+  width: 160px;
+  background-image: url(answerBox.svg);
+  background-repeat: no-repeat;
+  color: #005245;
 }
 
 .hidden {
@@ -103,13 +103,25 @@
 }
 
 body {
-    background-color: #005245;
+  background-color: #005245;
+}
+
+.screen-message {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  font-size: 1.5em;
+  padding: 20px;
 }
 
 .hexagons {
-    background-color: #005245;
-    border: none;
-    cursor: inherit;
+  background-color: #005245;
+  border: none;
+  cursor: inherit;
 }
 
 /*Side menu*/
@@ -311,16 +323,16 @@ body {
 /* The actual popup */
 
 .popup .popuptext {
-    visibility: hidden;
-    width: 300px;
-    height: 20vh;
-    background-color: #FFCC00;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    z-index: 1;
+  visibility: hidden;
+  width: 300px;
+  height: 20vh;
+  background-color: #ffcc00;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
@@ -399,38 +411,38 @@ body {
 }
 
 .hex-grid__content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-size: 1.125rem;
-    color: #111111;
-    background-color: #ffffff;
-    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 25%;
-    text-decoration: none;
-    text-align: center;
-    transition: transform 0.24s ease-out;
-    writing-mode: vertical-rl;
-    /* color: transparent; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 1.125rem;
+  color: #111111;
+  background-color: #ffffff;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 25%;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.24s ease-out;
+  writing-mode: vertical-rl;
+  /* color: transparent; */
 }
 
 #hex1-1 {
-    background-color: #005245;
-    color: #ffffff;
+  background-color: #005245;
+  color: #ffffff;
 }
 
 #hex1-1:hover {
-    background-color: #FFCC00;
-    color: #111111;
+  background-color: #ffcc00;
+  color: #111111;
 }
 
 #hex39-1 {
-    color: #005245;
-    font-size: 27px;
+  color: #005245;
+  font-size: 27px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -759,7 +771,7 @@ body {
 }
 
 .hex-grid__content:hover {
-    background-color: #FFCC00;
+  background-color: #ffcc00;
 }
 
 .hex-grid__list {
