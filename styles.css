@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    background-color: ffffff;
 }
 
 #question {
@@ -116,12 +117,15 @@ body {
     display: flex;
     position: absolute;
     align-items: center;
+    top: 32%;
+    left: 25%;
     justify-content: center;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    pointer-events: none;
 }
 
 
@@ -129,14 +133,15 @@ body {
 
 .popup .popuptext {
     visibility: hidden;
-    width: 300px;
-    height: 20vh;
-    background-color: rgb(236, 211, 65);
-    position: absolute;
-    color: #fff;
+    width: 35vw;
+    height: 46vh;
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
     z-index: 1;
 }
 
@@ -147,8 +152,70 @@ body {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+    pointer-events: all;
 }
 
+/* for calculating earned points from the console log to a var */
+.points-earned {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 160px;
+    color: #005245;
+}
+
+.continue-button {
+    background-color: #005245;
+    color: white;
+    display: initial;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0;
+    padding: 20px 32px;
+    font-size: 20px;
+}
+
+.points-box {
+    background-color: white;
+    position: relative;
+    display: flex;
+    width: 25vw;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.points-info {    
+    font-size: 25px;
+    line-height: 140px;
+    color: #005245;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.popup-circle {
+    border-radius: 50%;
+    position: relative;
+    background-color:#FFCC00;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    border-left: 10px;
+    color: #005245;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.letter {
+    color: #005245;
+    font-weight: 800;
+    font-size: 30px;
+}
 
 /* Add animation (fade in the popup) */
 
