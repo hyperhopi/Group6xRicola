@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,8 +24,8 @@
 }
 
 .header {
-    background-color: #005245;
-    height: 50px;
+    background-color: #13795b;
+    height: 60px;
 }
 
 .chapter {
@@ -60,6 +60,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    background-color: ffffff;
 }
 
 #question {
@@ -73,7 +74,7 @@
     background-image: url(questionBox.svg);
     background-repeat: no-repeat;
     background-position: center;
-    color: #005245;
+    color: #ffffff;
     font-weight: 650;
     font-size: medium;
 }
@@ -117,8 +118,168 @@ body {
 
 .side-menu {
     background-color: #e4e4e4;
-    width: 20vw;
+    width: 25vw;
     margin: 0%;
+}
+
+.SM-score-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 316.8px;
+    height: 741.6px;
+    margin: 30px 20px 0 20px;
+    padding: 10px;
+    border-radius: 7.2px;
+}
+
+.SM-text-score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268.2px;
+    height: 79.2px;
+    background: #ffcc00;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#SM-text-score {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43.2px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#SM-score-percent {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 30px;
+    color: #808285;
+}
+
+#SM-score-percent-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25.2px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: #005245;
+}
+
+#SM-border {
+    width: 144px;
+    height: 0px;
+    border: 1px solid #e4e4e4;
+}
+
+.SM-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 60px;
+    background-color: #fdeaa1;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    color: #808285;
+    margin: 20px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.SM-circle {
+    height: 55px;
+    width: 55px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.SM-letter {
+    font-size: 15px;
+}
+
+.SM-letter-text {
+    font-size: 10px;
+}
+
+#n-circle {
+    top: 370;
+    z-index: 2;
+    right: 245;
+}
+
+#p-circle {
+    top: 370;
+    z-index: 2;
+    right: 150;
+}
+
+#b-circle {
+    top: 370;
+    z-index: 2;
+    right: 55;
+}
+
+.SM-letter {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.SM-letter-text {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+#SM-number-of-footsteps {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #808285;
+}
+
+#SM-number-of-footsteps-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25.2px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 5px;
+    color: #005245;
+}
+
+.SM-footsteps-collected {
+    margin-top: 30px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    gap: 7px 7px;
+    grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . .";
+    color: #e4e4e4;
+    font-size: 25px;
+}
+
+.SM-yellow-boxes {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 20px 0;
 }
 
 
@@ -139,12 +300,15 @@ body {
     display: flex;
     position: absolute;
     align-items: center;
+    top: 32%;
+    left: 25%;
     justify-content: center;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    pointer-events: none;
 }
 
 
@@ -152,14 +316,15 @@ body {
 
 .popup .popuptext {
     visibility: hidden;
-    width: 300px;
-    height: 20vh;
-    background-color: #FFCC00;
-    position: absolute;
-    color: #fff;
+    width: 35vw;
+    height: 46vh;
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
     z-index: 1;
 }
 
@@ -170,6 +335,71 @@ body {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+    pointer-events: all;
+}
+
+
+/* for calculating earned points from the console log to a var */
+
+.points-earned {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 160px;
+    color: #005245;
+}
+
+.continue-button {
+    background-color: #005245;
+    color: white;
+    display: initial;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0;
+    padding: 20px 32px;
+    font-size: 20px;
+}
+
+.points-box {
+    background-color: white;
+    position: relative;
+    display: flex;
+    width: 25vw;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.points-info {
+    font-size: 25px;
+    line-height: 140px;
+    color: #005245;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.popup-circle {
+    border-radius: 50%;
+    position: relative;
+    background-color: #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    border-left: 10px;
+    color: #005245;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.letter {
+    color: #005245;
+    font-weight: 800;
+    font-size: 30px;
 }
 
 
@@ -229,7 +459,7 @@ body {
     display: grid;
     grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
     grid-gap: 2.5em 4em;
-    font-size: 15.5px;
+    font-size: 12.5px;
 }
 
 .hex-grid__item {
@@ -247,7 +477,7 @@ body {
     width: 100%;
     font-size: 1.125rem;
     color: #111111;
-    background-color: #fff;
+    background-color: #ffffff;
     clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
     display: flex;
     flex-direction: column;
@@ -263,7 +493,7 @@ body {
 
 #hex1a {
     background-color: #005245;
-    color: #fff;
+    color: #ffffff;
 }
 
 #hex1a:hover {
