@@ -50,8 +50,6 @@ function startGame(gridItem) {
 function begin(event) {
   main.style.WebkitAnimation = "fadeOut 0.6s";
   main.style.animation = "fadeOut 0.6s";
-  sideMenu.style.WebkitAnimation= "fadeOut 0.6s";
-  sideMenu.style.animation = "fadeOut 0.6s";
   setTimeout(() => {
     main.classList.add("hidden");
     sideMenu.classList.add("hidden");
@@ -79,6 +77,7 @@ function continueGame() {
     main.style.WebkitAnimation = "fadeIn 1s";
     main.style.animation = "fadeIn 1s";
     main.classList.remove("hidden");
+    sideMenu.classList.remove("hidden");
     wrapper.style.backgroundImage =
       "url('Grindelwald_IMGP9734_35_Kombi_RGB.jpg')";
   }, 450);
