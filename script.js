@@ -14,6 +14,7 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const sideMenu = document.querySelector("#side-menu");
 const wrapper = document.querySelector(".wrapper");
+const container = document.querySelector(".container");
 const screenMessage = document.getElementById("screen-message");
 const nBoxPoints = document.getElementById("n-box");
 const pBoxPoints = document.getElementById("p-box");

@@ -150,7 +150,7 @@ body {
   justify-content: center;
   width: 316.8px;
   /* height: 741.6px; */
-  height: 80vh;
+  height: 85vh;
   min-height: 350px;
   margin: 30px 20px 0 20px;
   padding: 10px;
@@ -367,12 +367,12 @@ body {
 .points-earned {
   font-weight: 500;
   font-style: normal;
-  font-size: 35px;
+  font-size: 30px;
   color: #005245;
   line-height: 1.6;
   margin-bottom: 1em;
+  margin-top: 15px;
 }
-
 
 .continue-button {
   background-color: #005245;
