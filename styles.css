@@ -20,7 +20,7 @@
     background-image: url(Grindelwald_IMGP9734_35_Kombi_RGB.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: url(./bee.png), auto;
+    /* cursor: url(./bee.png), auto; */
 }
 
 .header {
@@ -267,13 +267,22 @@ body {
     margin-top: 30px;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
-    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-columns: 30px 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    gap: 7px 7px;
-    grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . .";
+    gap: 17px 17px;
+    grid-template-areas: ". . . . ." ". . . . ." ". . . . .";
     color: #e4e4e4;
-    font-size: 25px;
+    font-size: 42px;
+}
+
+.smBtn {
+    /* border-radius: 50%; */
+}
+
+#temp2 {
+    /* color: red; */
+    /* background-color: red; */
 }
 
 .SM-yellow-boxes {
