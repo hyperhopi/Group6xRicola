@@ -1,47 +1,53 @@
 const textElement = document.getElementById('question');
 const optionButtonsElement = document.getElementById('option-buttons');
-const closeButton = document.getElementById('closeButton').addEventListener("click", showPopUp);
+const closeButton = document.getElementById('closeButton').addEventListener("click", continueGame);
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
-
+const main = document.querySelector('#main');
+const qna = document.querySelector('#qna');
+const wrapper = document.querySelector('.wrapper');
 
 function startGame() {
     state = {};
     showTextNode(1);
 }
 
-//beging page
 
 function begin() {
-    main.style.WebkitAnimation = "fadeOut 1s";
-    main.style.animation = "fadeOut 1s";
+    main.style.WebkitAnimation = "fadeOut 0.6s";
+    main.style.animation = "fadeOut 0.6s";
     setTimeout(() => {
-        qna.style.WebkitAnimation = "fadeIn 1s";
-        qna.style.animation = "fadeIn 1s";
-        setTimeout(() => {
-                main.style.display = "none";
-                qna.style.display = "block";
-            }, 450)
-            //qnaList 괄호속에 0 넣는대신 이렇게 먼저 만들어서 넣어준다. qIdx의 정의는 0으로 정해준다.
-            //이유: goNext함수를 두번째 돌릴때 여기다가 1 증가할수있게 만들기 위한 준비!
-            // let qIdx = 0;
-            // startGame(qIdx);
-        startGame();
-    }, 450)
+            main.classList.add("hidden");
+            wrapper.style.backgroundImage = "none";
+            qna.style.WebkitAnimation = "fadeIn 1s";
+            qna.style.animation = "fadeIn 1s";
+            qna.classList.remove("hidden");
+            startGame();
+        }, 450)
+        // activehex.style.backgroundColor = "#FDEAA1";
 }
 
 //Show or hide the popup message
 
-function showPopUp() {
+function togglePopUp() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
 
-function popp() {
-    var poop = document.getElementById("myPopp");
-    popup.classList.toggle("shoe");
-}
+function continueGame() {
+    // add function that returns to map screen
+    qna.style.WebkitAnimation = "fadeOut 0.6s";
+    qna.style.animation = "fadeOut 0.6s";
+    setTimeout(() => {
+        qna.classList.add("hidden");
+        main.style.WebkitAnimation = "fadeIn 1s";
+        main.style.animation = "fadeIn 1s";
+        main.classList.remove("hidden");
+        wrapper.style.backgroundImage = "url('Grindelwald_IMGP9734_35_Kombi_RGB.jpg')";
+    }, 450)
+    togglePopUp();
+};
 
 //Show or hide text and buttons
 
@@ -89,7 +95,7 @@ function selectOption(option) {
 
     if (nextTextNodeId <= 0) {
         // return startGame() //change to showMap later
-        return showPopUp();
+        return togglePopUp();
     }
 
     state = Object.assign(state, option.setNatureState)
@@ -107,5 +113,3 @@ hexses.forEach((e) => {
         questionPage.classList.remove('hidden');
     });
 })
-
-startGame();
