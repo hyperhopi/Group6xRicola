@@ -12,6 +12,9 @@ const qna = document.querySelector("#qna");
 const sideMenu = document.querySelector("#side-menu");
 const wrapper = document.querySelector(".wrapper");
 const screenMessage = document.getElementById("screen-message");
+const nBoxPoints = document.getElementById("n-box");
+const pBoxPoints = document.getElementById("p-box");
+const bBoxPoints = document.getElementById("b-box");
 const windowWidth = window.screen.width;
 
 document
@@ -115,12 +118,17 @@ function selectOption(option) {
 
   if (option.typeOfPoint === "Nature") {
     naturePoint = naturePoint + option.numberOfPoints;
+    nBoxPoints.innerHTML = naturePoint;
     console.log("You have " + naturePoint + " nature points");
+
   } else if (option.typeOfPoint === "Business") {
     businessPoint = businessPoint + option.numberOfPoints;
+    bBoxPoints.innerHTML = businessPoint;
     console.log("You have " + businessPoint + " business points");
+
   } else if (option.typeOfPoint === "People") {
     peoplePoint = peoplePoint + option.numberOfPoints;
+    pBoxPoints.innerHTML = peoplePoint;
     console.log("You have " + peoplePoint + " people points");
   }
 
