@@ -5,8 +5,12 @@ let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
 const main = document.querySelector('#main');
+const container = document.querySelector(".container");
+const screenMessage = document.getElementById("screen-message");
 const qna = document.querySelector('#qna');
 const wrapper = document.querySelector('.wrapper');
+const windowWidth = window.screen.width;
+
 
 function startGame() {
     state = {};
@@ -113,3 +117,9 @@ hexses.forEach((e) => {
         questionPage.classList.remove('hidden');
     });
 })
+
+if (windowWidth<1440) {
+console.log ("heyo bigger screen pls") 
+container.classList.add("hidden");
+screenMessage.classList.remove("hidden");
+} 
