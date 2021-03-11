@@ -136,6 +136,8 @@ body {
 
 #side-menu {
   background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
   width: 25vw;
   margin: 0%;
 }
@@ -145,8 +147,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 316.8px;
-  height: 741.6px;
+  /* height: 741.6px; */
+  height: 80vh;
+  min-height: 350px;
   margin: 30px 20px 0 20px;
   padding: 10px;
   border-radius: 7.2px;
@@ -193,8 +198,9 @@ body {
 }
 
 #SM-border {
-  width: 144px;
+  width: 244px;
   height: 0px;
+  margin: 20px 0 40px 0;
   border: 1px solid #e4e4e4;
 }
 
@@ -277,7 +283,7 @@ body {
 }
 
 .SM-footsteps-collected {
-  margin-top: 30px;
+  margin-top: 20px;
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
@@ -315,8 +321,8 @@ body {
   display: flex;
   position: absolute;
   align-items: center;
-  top: 32%;
-  left: 25%;
+  top: 33%;
+  left: 35%;
   justify-content: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -514,6 +520,21 @@ body {
 #hex39a {
   color: #005245;
   font-size: 27px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hex-grid__list {
+    --amount: 5;
+    height: 50vh;
+    /* position: relative; */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
+    grid-gap: 2.5em 4em;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
