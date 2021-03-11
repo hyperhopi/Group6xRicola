@@ -9,6 +9,7 @@ let peoplePoint = 0;
 let state = {};
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
+const sideMenu = document.querySelector("#side-menu");
 const wrapper = document.querySelector(".wrapper");
 const screenMessage = document.getElementById("screen-message");
 const windowWidth = window.screen.width;
@@ -49,8 +50,11 @@ function startGame(gridItem) {
 function begin(event) {
   main.style.WebkitAnimation = "fadeOut 0.6s";
   main.style.animation = "fadeOut 0.6s";
+  sideMenu.style.WebkitAnimation= "fadeOut 0.6s";
+  sideMenu.style.animation = "fadeOut 0.6s";
   setTimeout(() => {
     main.classList.add("hidden");
+    sideMenu.classList.add("hidden");
     wrapper.style.backgroundImage = "none";
     qna.style.WebkitAnimation = "fadeIn 1s";
     qna.style.animation = "fadeIn 1s";
