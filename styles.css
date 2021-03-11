@@ -325,7 +325,7 @@ body {
   display: flex;
   position: absolute;
   align-items: center;
-  top: 33%;
+  top: 30%;
   left: 35%;
   justify-content: center;
   cursor: pointer;
@@ -340,9 +340,9 @@ body {
 
 .popup .popuptext {
   visibility: hidden;
-  width: 35vw;
-  min-height: 46vh;
-  padding-bottom: 3em;
+  width: 38vw;
+  min-height: 48vh;
+  padding: 1em;
   background-color: #e4e4e4;
   display: flex;
   flex-direction: column;
@@ -373,6 +373,7 @@ body {
   margin-bottom: 1em;
 }
 
+
 .continue-button {
   background-color: #005245;
   color: white;
@@ -389,19 +390,19 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  width: 25vw;
+  width: 30vw;
   margin-bottom: 20px;
   border-radius: 8px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .points-info {
-  font-size: 25px;
-  line-height: 140px;
+  font-size: 22px;
+  line-height: 150px;
   color: #005245;
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .popup-circle {
