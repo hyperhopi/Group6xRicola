@@ -6,14 +6,14 @@ const textNodes = [
     options: [
       {
         text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: -1,
       },
       {
         text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: -1,
@@ -22,18 +22,18 @@ const textNodes = [
   },
   {
     id: 2,
-    text: "Question number2",
+    text: "Question number 2",
     options: [
       {
         text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 3,
       },
       {
         text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 3,
@@ -42,38 +42,38 @@ const textNodes = [
   },
   {
     id: 3,
-    text: "Question number3",
+    text: "Question number 3",
     options: [
       {
         text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
-        nextText: 4,
+        nextText: -1,
       },
       {
         text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
-        nextText: 4,
+        nextText: -1,
       },
     ],
   },
   {
     id: 4,
-    text: "Question number4",
+    text: "Question number 4",
     options: [
       {
         text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 5,
       },
       {
         text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 5,
@@ -82,18 +82,18 @@ const textNodes = [
   },
   {
     id: 5,
-    text: "Question number5",
+    text: "Question number 5",
     options: [
       {
         text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 6,
       },
       {
         text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 6,
@@ -102,21 +102,21 @@ const textNodes = [
   },
   {
     id: 6,
-    text: "Question number6",
+    text: "Question number 6",
     options: [
       {
         text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+          "<span class='bold'>Option A</span><br>This option favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
-        nextText: 7,
+        nextText: -1,
       },
       {
         text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+          "<span class='bold'>Option B</span><br>This option favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
-        nextText: 7,
+        nextText: -1,
       },
     ],
   },
@@ -125,15 +125,13 @@ const textNodes = [
     text: "Question number7",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 3,
         nextText: 8,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 8,
@@ -145,15 +143,13 @@ const textNodes = [
     text: "Question number8",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 3,
         nextText: 9,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 9,
@@ -165,15 +161,13 @@ const textNodes = [
     text: "Question number9",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 3,
         nextText: 10,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 10,
@@ -185,15 +179,13 @@ const textNodes = [
     text: "Question number10",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 3,
         nextText: 11,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 11,
@@ -205,15 +197,13 @@ const textNodes = [
     text: "Question number11",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 12,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 12,
@@ -225,15 +215,13 @@ const textNodes = [
     text: "Question number12",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 13,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 13,
@@ -245,15 +233,13 @@ const textNodes = [
     text: "Question number13",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 3,
         nextText: 14,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 14,
@@ -265,15 +251,13 @@ const textNodes = [
     text: "Question number14",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 3,
         nextText: 15,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 15,
@@ -285,15 +269,13 @@ const textNodes = [
     text: "Question number15",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 16,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 16,
@@ -305,15 +287,13 @@ const textNodes = [
     text: "Question number16",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 17,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 17,
@@ -325,15 +305,13 @@ const textNodes = [
     text: "Question number17",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 18,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 18,
@@ -345,15 +323,13 @@ const textNodes = [
     text: "Question number18",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 19,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 19,
@@ -365,15 +341,13 @@ const textNodes = [
     text: "Question number19",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 20,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 20,
@@ -385,15 +359,13 @@ const textNodes = [
     text: "Question number20",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 21,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 21,
@@ -405,15 +377,13 @@ const textNodes = [
     text: "Question number21",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 22,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 22,
@@ -425,15 +395,13 @@ const textNodes = [
     text: "Question number22",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 23,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 23,
@@ -445,15 +413,13 @@ const textNodes = [
     text: "Question number23",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 24,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 24,
@@ -465,15 +431,13 @@ const textNodes = [
     text: "Question number24",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 25,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 25,
@@ -485,15 +449,13 @@ const textNodes = [
     text: "Question number25",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 26,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 26,
@@ -505,15 +467,13 @@ const textNodes = [
     text: "Question number26",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 27,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 27,
@@ -525,15 +485,13 @@ const textNodes = [
     text: "Question number27",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 28,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 28,
@@ -545,15 +503,13 @@ const textNodes = [
     text: "Question number28",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 29,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 29,
@@ -565,15 +521,13 @@ const textNodes = [
     text: "Question number29",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 30,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 30,
@@ -585,15 +539,13 @@ const textNodes = [
     text: "Question number30",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 31,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 31,
@@ -605,15 +557,13 @@ const textNodes = [
     text: "Question number31",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 32,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 32,
@@ -625,15 +575,13 @@ const textNodes = [
     text: "Question number32",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 33,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 33,
@@ -645,15 +593,13 @@ const textNodes = [
     text: "Question number33",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 34,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 34,
@@ -665,15 +611,13 @@ const textNodes = [
     text: "Question number34",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 3,
         nextText: 35,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 35,
@@ -685,15 +629,13 @@ const textNodes = [
     text: "Question number35",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 3,
         nextText: 36,
       },
       {
-        text:
-          "This options favors SomeThn, so you may get SomeThn points. Lin bit Longer.",
+        text: "This options favors SomeThn, so you may get SomeThn points.",
         typeOfPoint: "SomeThn",
         numberOfPoints: 1,
         nextText: 36,
@@ -705,15 +647,13 @@ const textNodes = [
     text: "Question number36",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 37,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 37,
@@ -725,15 +665,13 @@ const textNodes = [
     text: "Question number37",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 38,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 38,
@@ -745,15 +683,13 @@ const textNodes = [
     text: "Question number38",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 39,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 39,
@@ -765,15 +701,13 @@ const textNodes = [
     text: "Question number39",
     options: [
       {
-        text:
-          "This options favors Another, so you may get Another points. Lin bit Longer.",
+        text: "This options favors Another, so you may get Another points.",
         typeOfPoint: "Another",
         numberOfPoints: 2,
         nextText: 40,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 40,
@@ -785,15 +719,13 @@ const textNodes = [
     text: "Question number40",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 41,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 41,
@@ -805,15 +737,13 @@ const textNodes = [
     text: "Question number41",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 42,
       },
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 42,
@@ -825,15 +755,13 @@ const textNodes = [
     text: "Question number42",
     options: [
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 43,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 43,
@@ -845,15 +773,13 @@ const textNodes = [
     text: "Question number43",
     options: [
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 44,
       },
       {
-        text:
-          "This options favors Business, so you may get Business points. Lin bit Longer.",
+        text: "This options favors Business, so you may get Business points.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 44,
@@ -865,15 +791,13 @@ const textNodes = [
     text: "Question number44",
     options: [
       {
-        text:
-          "This options favors People, so you may get People points. Lin bit Longer.",
+        text: "This options favors People, so you may get People points.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: -1,
       },
       {
-        text:
-          "This options favors Nature, so you may get Nature points. Lin bit Longer.",
+        text: "This options favors Nature, so you may get Nature points.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: -1,
