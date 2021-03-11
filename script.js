@@ -1,8 +1,8 @@
 const textElement = document.getElementById("question");
 const optionButtonsElement = document.getElementById("option-buttons");
 const closeButton = document
-  .getElementById("closeButton")
-  .addEventListener("click", continueGame);
+    .getElementById("closeButton")
+    .addEventListener("click", continueGame);
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
@@ -22,21 +22,21 @@ const totalPoints = document.querySelector(".totalPoints");
 const windowWidth = window.screen.width;
 
 document
-  .querySelectorAll(".hex-grid__item")
-  /* _click event is fired_
-   Browser: hey JS dudes,
-    this fella just <clicked> <.hex-grid__content>,
-    which is inside of <.hex-grid__item> that you had that event listener thingy
+    .querySelectorAll(".hex-grid__item")
+    /* _click event is fired_
+     Browser: hey JS dudes,
+      this fella just <clicked> <.hex-grid__content>,
+      which is inside of <.hex-grid__item> that you had that event listener thingy
 
-   JS: Ok bruh, lemme fire that function <begin> and imma feed it an object with that data
+     JS: Ok bruh, lemme fire that function <begin> and imma feed it an object with that data
 
-    (this object is of type Event) object: {
-      target: <.hex-grid__content>: {
-        parentElement: <.hex-grid__item>
-      }
-      , ....
-    } */
-  .forEach((item) => item.addEventListener("click", begin));
+      (this object is of type Event) object: {
+        target: <.hex-grid__content>: {
+          parentElement: <.hex-grid__item>
+        }
+        , ....
+      } */
+    .forEach((item) => item.addEventListener("click", begin));
 
 function startGame(gridItem) {
   state = {};
@@ -59,21 +59,20 @@ function startGame(gridItem) {
 //begin page
 
 function begin(event) {
-  main.style.WebkitAnimation = "fadeOut 0.6s";
-  main.style.animation = "fadeOut 0.6s";
-  setTimeout(() => {
-    main.classList.add("hidden");
-    sideMenu.classList.add("hidden");
-    wrapper.style.backgroundImage = "none";
-    qna.style.WebkitAnimation = "fadeIn 1s";
-    qna.style.animation = "fadeIn 1s";
-    qna.classList.remove("hidden");
-    startGame(event.target.parentElement);
-  }, 450);
+    main.style.WebkitAnimation = "fadeOut 0.6s";
+    main.style.animation = "fadeOut 0.6s";
+    setTimeout(() => {
+        main.classList.add("hidden");
+        sideMenu.classList.add("hidden");
+        wrapper.style.backgroundImage = "none";
+        qna.style.WebkitAnimation = "fadeIn 1s";
+        qna.style.animation = "fadeIn 1s";
+        qna.classList.remove("hidden");
+        startGame(event.target.parentElement);
+    }, 450);
 }
 
 //Show or hide the popup message
-
 function togglePopUp() { 
   totalPoints.innerHTML = "";
   var popup = document.getElementById("myPopup");
@@ -94,7 +93,7 @@ function togglePopUp() {
     pointsTemplate.querySelector(".letter").innerText = "B";
     pointsTemplate.querySelector(".type-text").innerText = "Business";
     pointsTemplate.querySelector(".points-info").innerText =
-      "Business boring stoof";
+      "Business oriented result";
 
     const newBoozines = pointsTemplate.cloneNode();
     newBoozines.innerHTML = pointsTemplate.innerHTML;
@@ -107,7 +106,7 @@ function togglePopUp() {
     pointsTemplate.querySelector(".letter").innerText = "N";
     pointsTemplate.querySelector(".type-text").innerText = "Nature";
     pointsTemplate.querySelector(".points-info").innerText =
-      "Nature natural stoof";
+      "Nature oriented result";
 
     const newNatur = pointsTemplate.cloneNode();
     newNatur.innerHTML = pointsTemplate.innerHTML;
@@ -120,7 +119,7 @@ function togglePopUp() {
     pointsTemplate.querySelector(".letter").innerText = "P";
     pointsTemplate.querySelector(".type-text").innerText = "People";
     pointsTemplate.querySelector(".points-info").innerText =
-      "People perky stoof";
+      "People oriented result";
 
     const newPpl = pointsTemplate.cloneNode();
     newPpl.innerHTML = pointsTemplate.innerHTML;
@@ -132,45 +131,45 @@ function togglePopUp() {
 }
 
 function continueGame() {
-  // add function that returns to map screen
-  qna.style.WebkitAnimation = "fadeOut 0.6s";
-  qna.style.animation = "fadeOut 0.6s";
-  setTimeout(() => {
-    qna.classList.add("hidden");
-    main.style.WebkitAnimation = "fadeIn 1s";
-    main.style.animation = "fadeIn 1s";
-    main.classList.remove("hidden");
-    sideMenu.classList.remove("hidden");
-    wrapper.style.backgroundImage =
-      "url('Grindelwald_IMGP9734_35_Kombi_RGB.jpg')";
-  }, 450);
-  togglePopUp();
+    // add function that returns to map screen
+    qna.style.WebkitAnimation = "fadeOut 0.6s";
+    qna.style.animation = "fadeOut 0.6s";
+    setTimeout(() => {
+        qna.classList.add("hidden");
+        main.style.WebkitAnimation = "fadeIn 1s";
+        main.style.animation = "fadeIn 1s";
+        main.classList.remove("hidden");
+        sideMenu.classList.remove("hidden");
+        wrapper.style.backgroundImage =
+            "url('Grindelwald_IMGP9734_35_Kombi_RGB.jpg')";
+    }, 450);
+    togglePopUp();
 }
 
 //Show or hide text and buttons
 
 function showTextNode(textNodeIndex) {
-  const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
-  textElement.innerText = textNode.text;
-  while (optionButtonsElement.firstChild) {
-    optionButtonsElement.removeChild(optionButtonsElement.firstChild);
-  }
-
-  textNode.options.forEach((option) => {
-    if (showOption(option)) {
-      const button = document.createElement("div");
-      button.innerHTML = option.text;
-      button.classList.add("btn");
-      button.addEventListener("click", () => selectOption(option));
-      optionButtonsElement.appendChild(button);
+    const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
+    textElement.innerText = textNode.text;
+    while (optionButtonsElement.firstChild) {
+        optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
-  });
+
+    textNode.options.forEach((option) => {
+        if (showOption(option)) {
+            const button = document.createElement("div");
+            button.innerHTML = option.text;
+            button.classList.add("btn");
+            button.addEventListener("click", () => selectOption(option));
+            optionButtonsElement.appendChild(button);
+        }
+    });
 }
 
 function showMap() {}
 
 function showOption(option) {
-  return option.requiredState == null || option.requiredState(state);
+    return option.requiredState == null || option.requiredState(state);
 }
 
 function selectOption(option) {
@@ -199,7 +198,6 @@ function selectOption(option) {
   }
 
   if (nextTextNodeId <= 0) {
-    // return startGame() //change to showMap later
     return togglePopUp();
   }
 
@@ -209,17 +207,17 @@ function selectOption(option) {
 
 /* here is some map JS */
 
-const hexses = document.querySelectorAll(".hexagons");
+// const hexses = document.querySelectorAll(".hexagons");
 
-hexses.forEach((e) => {
-  e.addEventListener("click", function () {
-    let questionPage = document.querySelector(".hidden");
-    questionPage.classList.remove("hidden");
-  });
-});
+// hexses.forEach((e) => {
+//     e.addEventListener("click", function() {
+//         let questionPage = document.querySelector(".hidden");
+//         questionPage.classList.remove("hidden");
+//     });
+// });
 
-if (windowWidth<1440) {
-console.log ("heyo bigger screen pls") 
-container.classList.add("hidden");
-screenMessage.classList.remove("hidden");
+if (windowWidth < 1440) {
+    console.log("heyo bigger screen pls")
+    container.classList.add("hidden");
+    screenMessage.classList.remove("hidden");
 };
