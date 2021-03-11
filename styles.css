@@ -331,7 +331,8 @@ body {
 .popup .popuptext {
   visibility: hidden;
   width: 35vw;
-  height: 46vh;
+  min-height: 46vh;
+  padding-bottom: 3em;
   background-color: #e4e4e4;
   display: flex;
   flex-direction: column;
@@ -357,8 +358,9 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 35px;
-  line-height: 160px;
   color: #005245;
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
 .continue-button {
@@ -376,6 +378,7 @@ body {
   background-color: white;
   position: relative;
   display: flex;
+  align-items: center;
   width: 25vw;
   margin-bottom: 20px;
   border-radius: 8px;

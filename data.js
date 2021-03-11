@@ -26,8 +26,8 @@ const textNodes = [
     options: [
       {
         text:
-          "<span class='bold'>Option A</span><br>This option favors Another, so you may get Another points.",
-        typeOfPoint: "Another",
+          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
+        typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 3,
       },

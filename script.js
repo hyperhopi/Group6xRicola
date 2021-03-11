@@ -6,6 +6,9 @@ const closeButton = document
 let naturePoint = 0;
 let businessPoint = 0;
 let peoplePoint = 0;
+let currentNaturePoint = 0;
+let currentBusinessPoint = 0;
+let currentPeoplePoint = 0;
 let state = {};
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
@@ -15,6 +18,7 @@ const screenMessage = document.getElementById("screen-message");
 const nBoxPoints = document.getElementById("n-box");
 const pBoxPoints = document.getElementById("p-box");
 const bBoxPoints = document.getElementById("b-box");
+const totalPoints = document.querySelector(".totalPoints");
 const windowWidth = window.screen.width;
 
 document
@@ -46,6 +50,10 @@ function startGame(gridItem) {
     In order to fix that, we need to <parseInt> that string MOFO, so poor showTextNode don't
     loose it's shit.*/
   showTextNode(parseInt(gridItem.dataset.id));
+  
+  currentNaturePoint = 0;
+  currentBusinessPoint = 0;
+  currentPeoplePoint = 0;
 }
 
 //begin page
@@ -66,9 +74,61 @@ function begin(event) {
 
 //Show or hide the popup message
 
-function togglePopUp() {
+function togglePopUp() { 
+  totalPoints.innerHTML = "";
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+  let headerText = 'You have earned';
+
+  const pointsTemplate = document.createElement("div");
+  pointsTemplate.classList.add("points-box");
+  pointsTemplate.innerHTML = `
+  <div class="popup-circle">
+    <span class="letter">N</span>
+      <span class="type-text">Nature</span>
+  </div>
+  <p class="points-info">Zero pesticides</p>`;
+  
+  if (currentBusinessPoint !== 0) {
+    headerText = `${headerText} ${currentBusinessPoint} Business Points`;
+    pointsTemplate.querySelector(".letter").innerText = "B";
+    pointsTemplate.querySelector(".type-text").innerText = "Business";
+    pointsTemplate.querySelector(".points-info").innerText =
+      "Business boring stoof";
+
+    const newBoozines = pointsTemplate.cloneNode();
+    newBoozines.innerHTML = pointsTemplate.innerHTML;
+
+    totalPoints.appendChild(newBoozines);
+  }
+
+  if (currentNaturePoint !== 0) {
+    headerText = `${headerText} ${currentNaturePoint} Nature Points`;
+    pointsTemplate.querySelector(".letter").innerText = "N";
+    pointsTemplate.querySelector(".type-text").innerText = "Nature";
+    pointsTemplate.querySelector(".points-info").innerText =
+      "Nature natural stoof";
+
+    const newNatur = pointsTemplate.cloneNode();
+    newNatur.innerHTML = pointsTemplate.innerHTML;
+
+    totalPoints.appendChild(newNatur);
+  }
+
+  if (currentPeoplePoint !== 0) {
+    headerText = `${headerText} ${currentPeoplePoint} People Points`;
+    pointsTemplate.querySelector(".letter").innerText = "P";
+    pointsTemplate.querySelector(".type-text").innerText = "People";
+    pointsTemplate.querySelector(".points-info").innerText =
+      "People perky stoof";
+
+    const newPpl = pointsTemplate.cloneNode();
+    newPpl.innerHTML = pointsTemplate.innerHTML;
+
+    totalPoints.appendChild(newPpl);
+  }
+
+  document.querySelector('.points-earned').innerText = headerText
 }
 
 function continueGame() {
@@ -118,16 +178,22 @@ function selectOption(option) {
 
   if (option.typeOfPoint === "Nature") {
     naturePoint = naturePoint + option.numberOfPoints;
+    
+    currentNaturePoint = currentNaturePoint + option.numberOfPoints;
     nBoxPoints.innerHTML = naturePoint;
     console.log("You have " + naturePoint + " nature points");
 
   } else if (option.typeOfPoint === "Business") {
     businessPoint = businessPoint + option.numberOfPoints;
+
+    currentBusinessPoint = currentBusinessPoint + option.numberOfPoints;
     bBoxPoints.innerHTML = businessPoint;
     console.log("You have " + businessPoint + " business points");
 
   } else if (option.typeOfPoint === "People") {
     peoplePoint = peoplePoint + option.numberOfPoints;
+    
+    currentPeoplePoint = currentPeoplePoint + option.numberOfPoints;
     pBoxPoints.innerHTML = peoplePoint;
     console.log("You have " + peoplePoint + " people points");
   }
