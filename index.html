@@ -1,14 +1,13 @@
 <!-- <!DOCTYPE html> -->
 <html>
-
-<head>
+  <head>
     <title>Ricola Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="header">
+
         <div class="ricola-logo">
             <img src="./ricolaName.svg" />
         </div>
@@ -253,10 +252,21 @@
             </div>
 
             <!--POPUP! Hidden most of the time-->
-            <div class="popup">
-                <span class="popuptext" id="myPopup">Congratulations! You made it to the next round<br>
-                    <button id="closeButton">Continue</button></span>
-            </div>
+        <div class="popup">
+            <span class="popuptext" id="myPopup"
+              ><p class="points-earned">Earned points to register here</p>
+              <div class="points-box">
+                <div class="popup-circle">
+                  <!-- needs to change N,B,P or O(ther?)-->
+                  <span class="letter">N</span>
+                  <span>Nature</span>
+                </div>
+                <p class="points-info">Zero pesticides</p>
+                <!-- needs to change depending on if N, B, P etc -->
+              </div>
+              <button id="closeButton" class="continue-button">Continue</button>
+            </span>
+          </div>
 
             <script src="data.js"></script>
             <script src="script.js"></script>
@@ -331,7 +341,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
