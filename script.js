@@ -13,14 +13,11 @@ const wrapper = document.querySelector(".wrapper");
 
 document
   .querySelectorAll(".hex-grid__item")
-
-  /*
-   _click event is fired_
+  /* _click event is fired_
    Browser: hey JS dudes,
     this fella just <clicked> <.hex-grid__content>,
     which is inside of <.hex-grid__item> that you had that event listener thingy
 
-  
    JS: Ok bruh, lemme fire that function <begin> and imma feed it an object with that data
 
     (this object is of type Event) object: {
@@ -28,25 +25,20 @@ document
         parentElement: <.hex-grid__item>
       }
       , ....
-    }
-
-  */
-
+    } */
   .forEach((item) => item.addEventListener("click", begin));
 
 function startGame(gridItem) {
   state = {};
   /* below line: looks for the dataset which is data-id, parses the string number
   into a real number, then "assigns" the relevant id nr to the array question nrs */
-  /* 
-    Li'l gridItem has a dataset attribute, which you can also call data-* attribute
+  /* Li'l gridItem has a dataset attribute, which you can also call data-* attribute
     Li'l gridItem, when it wants to reffer to it's data-ID, it calls it, in the JS town,
     as dataset.<ID>.
     Thing is, that is a string, which is not what showTextNode expects as a parameter, cuz
     it will use that parameter to find an item on textNodes by the item's id, which is a nubmer.
     In order to fix that, we need to <parseInt> that string MOFO, so poor showTextNode don't
-    loose it's shit.
-  */
+    loose it's shit.*/
   showTextNode(parseInt(gridItem.dataset.id));
 }
 
