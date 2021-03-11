@@ -77,6 +77,8 @@
   color: #ffffff;
   font-weight: 650;
   font-size: medium;
+  color: #005245;
+  text-align: center;
 }
 
 .button-grid {
@@ -86,8 +88,13 @@
   gap: 5px;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .btn {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 22px;
@@ -97,6 +104,8 @@
   background-image: url(answerBox.svg);
   background-repeat: no-repeat;
   color: #005245;
+  text-align: center;
+  font-size: 15px;
 }
 
 .hidden {

@@ -27,10 +27,8 @@
                 </div>
 
                 <div id="option-buttons" class="button-grid">
-                    <button class="btn"><img src="./smallstep.svg" alt="">button1</button>
-                    <button class="btn"><img src="./smallstep.svg" alt="">button2</button>
-                    <!-- <button class="btn">button3</button>
-          <button class="btn">button4</button> -->
+                    <button class="btn"><img src="./smallstep.svg" alt=""><span>Option A</span><span class="btn"></span></button>
+                    <button class="btn"><img src="./smallstep.svg" alt=""><span>Option B</span><span></span></button>
                 </div>
             </div>
 
@@ -48,7 +46,7 @@
                 <div class="map-grid" id="main">
                     <ul class="hex-grid__list">
 
-                        <li class="hex-grid__item" id="hex1">
+                        <li class="hex-grid__item" id="hex1" data-id="1">
                             <div class="hex-grid__content" id="hex1a" color="red">
                                 START
                             </div>
@@ -90,12 +88,12 @@
                                 (8)
                             </div>
                         </li>
-                        <li class="hex-grid__item" id="hex9" data-id="3">
+                        <li class="hex-grid__item" id="hex9" data-id="4">
                             <div class="hex-grid__content" id="activehex9" onclick="document.getElementById('activehex9').style.backgroundColor = '#FDEAA1';document.getElementById('temp9').style.color = '#FFCC00'">
                                 Footstep 3
                             </div>
                         </li>
-                        <li class="hex-grid__item" id="hex10" data-id="5">
+                        <li class="hex-grid__item" id="hex10" data-id="7">
                             <div class="hex-grid__content" id="activehex10" onclick="document.getElementById('activehex10').style.backgroundColor = '#FDEAA1';document.getElementById('temp10').style.color = '#FFCC00'">
                                 Footstep 4
                             </div>
