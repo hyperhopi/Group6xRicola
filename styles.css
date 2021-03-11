@@ -194,19 +194,24 @@ body {
 
 .SM-box {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   background-color: #fdeaa1;
   font-weight: bold;
   font-size: 20px;
   line-height: 16px;
   text-align: center;
   color: #808285;
-  margin: 20px;
-  margin-top: 60px;
-  position: relative;
+}
+
+.SM-nature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 .SM-circle {
@@ -218,8 +223,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
+  text-align: center;
+  color: #13795b;
 }
+
 .SM-letter {
   font-size: 15px;
 }
@@ -228,22 +235,11 @@ body {
   font-size: 10px;
 }
 
-#n-circle {
-  top: 370;
-  z-index: 2;
-  right: 245;
-}
-
+#b-circle,
+#n-circle,
 #p-circle {
-  top: 370;
   z-index: 2;
-  right: 150;
-}
-
-#b-circle {
-  top: 370;
-  z-index: 2;
-  right: 55;
+  margin-bottom: -10px;
 }
 
 .SM-letter {
