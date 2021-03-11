@@ -121,7 +121,6 @@ function selectOption(option) {
     console.log("You have " + businessPoint + " business points");
   } else if (option.typeOfPoint === "People") {
     peoplePoint = peoplePoint + option.numberOfPoints;
-    console.log("this is my life i whana live" + option.numberOfPoints);
     console.log("You have " + peoplePoint + " people points");
   }
 
