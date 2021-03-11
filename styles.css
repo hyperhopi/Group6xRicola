@@ -468,7 +468,7 @@ body {
     display: grid;
     grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
     grid-gap: 2.5em 4em;
-    font-size: 12.5px;
+    font-size: 15px;
 }
 
 .hex-grid__item {
