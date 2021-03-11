@@ -22,18 +22,18 @@ const textNodes = [
   },
   {
     id: 2,
-    text: "Question number 2",
+    text:
+      "One of your herb farmers is calling you in distress. Half of her sage plants are dying from a disease she has never seen before. You need sage next month. What would you do?",
     options: [
       {
         text:
-          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
+          "<span class='bold'>Option A</span><br>Ask her to try a solution that is 100% natural, but has questionable results.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: 3,
       },
       {
-        text:
-          "<span class='bold'>Option B</span><br>This option favors People, so you may get People points.",
+        text: "<span class='bold'>Option B</span><br>Find a new supplier.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: 3,
@@ -42,18 +42,19 @@ const textNodes = [
   },
   {
     id: 3,
-    text: "Question number 3",
+    text:
+      "The natural solution was ineffective. The herbs are dying even faster.",
     options: [
       {
         text:
-          "<span class='bold'>Option A</span><br>This option favors People, so you may get People points.",
+          "<span class='bold'>Option A</span><br>Ask her to kill the defected plants and provide a compensation for her losses.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: -1,
       },
       {
         text:
-          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
+          "<span class='bold'>Option B</span><br> Use an effective pesticide.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: -1,
@@ -62,18 +63,19 @@ const textNodes = [
   },
   {
     id: 4,
-    text: "Question number 4",
+    text:
+      "There was a miscalculation and an extra amount of herbs will be needed before Winter arrives. You need a new supplier. Who do you choose?",
     options: [
       {
         text:
-          "<span class='bold'>Option A</span><br>This option favors People, so you may get People points.",
+          "<span class='bold'>Option A</span><br>An organic farm with the BioSuisse certification that can try to attend the demand, but it's not guaranteed.",
         typeOfPoint: "People",
         numberOfPoints: 2,
         nextText: 5,
       },
       {
         text:
-          "<span class='bold'>Option B</span><br>This option favors Nature, so you may get Nature points.",
+          "<span class='bold'>Option B</span><br>A farm that is outside of Switzerland, but can guarantee a shipment in a month.",
         typeOfPoint: "Nature",
         numberOfPoints: 1,
         nextText: 5,
@@ -82,18 +84,18 @@ const textNodes = [
   },
   {
     id: 5,
-    text: "Question number 5",
+    text: "You need to find a supplier of basil for a new product line.",
     options: [
       {
         text:
-          "<span class='bold'>Option A</span><br>This option favors Nature, so you may get Nature points.",
+          "<span class='bold'>Option A</span><br>Use local family farm that you have collaborated with before, but stopped because they lost their eco certifications.",
         typeOfPoint: "Nature",
         numberOfPoints: 2,
         nextText: 6,
       },
       {
         text:
-          "<span class='bold'>Option B</span><br>This option favors Business, so you may get Business points.",
+          "<span class='bold'>Option B</span><br>Use Swiss supplier that uses vertical farming, claiming that is more sustainable.",
         typeOfPoint: "Business",
         numberOfPoints: 1,
         nextText: 6,
@@ -102,18 +104,18 @@ const textNodes = [
   },
   {
     id: 6,
-    text: "Question number 6",
+    text: "A mysterious disease is taking over some herbs! What would you do?",
     options: [
       {
         text:
-          "<span class='bold'>Option A</span><br>This option favors Business, so you may get Business points.",
+          "<span class='bold'>Option A</span><br>The researchers at Ricola are trying to develop a natural solution, so it may take some time.",
         typeOfPoint: "Business",
         numberOfPoints: 2,
         nextText: -1,
       },
       {
         text:
-          "<span class='bold'>Option B</span><br>This option favors People, so you may get People points.",
+          "<span class='bold'>Option B</span><br>The Herb Group has successfully tested one pesticide works against that disease.",
         typeOfPoint: "People",
         numberOfPoints: 1,
         nextText: -1,
