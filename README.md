@@ -1,4 +1,4 @@
-# Hypre Island project collaboration frontend developers and UX designers
+# Hyper Island collaboration project frontend developers and UX designers
 
 ## The developers
 
