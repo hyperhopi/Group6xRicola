@@ -1,9 +1,9 @@
-# A student project collaboration between frontend developers and UX designers
+# Hypre Island student project collaboration between frontend developers and UX designers
 
 ## The developers
 
 * Linnéa Gistrand
-* Hopi (Hyewon Park)
+* Hyewon Park (Hopi)
 * Emma Scott-Allen
 
 ## The UX designers
@@ -13,6 +13,8 @@
 
 # About
 
-Our task was to design and code a webpage that would help Ricola towards the goal they wanted to set achieve internally
+Ricola sustainability project: Design and code
+Little bee goes for a journey to achieve points and learn by solving questions
+
 
 https://hyperhopi.github.io/Group6xRicola/
