@@ -1,4 +1,4 @@
-# Hypre Island student project collaboration between frontend developers and UX designers
+# Hypre Island project collaboration frontend developers and UX designers
 
 ## The developers
 
